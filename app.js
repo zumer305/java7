@@ -89,7 +89,7 @@ const std={
     age:12,
     roll:88,
     getname:function(){
-        console.log(this);  //object scope
+        console.log(this);  //object ka  scope
         console.log(this.name);
 
     },
@@ -105,7 +105,7 @@ const std2={
     age:12,
     roll:88,
     getname:()=>{
-        console.log(this);  //parent scope
+        console.log(this);  //object ka parent scope->window
         console.log(this.name);
 
     },
@@ -113,6 +113,22 @@ const std2={
 
 };
 std2.getname();
+
+
+
+// arrow function square
+const sqr=(n)=>{
+    return n*n;
+}
+console.log(sqr(6));
+
+
+// settimeout 5 Times
+// setinterval 2sec
+let id=setInterval(()=>{console.log("HelloWorld")},2000);
+setTimeout(()=>{clearInterval(id)},10000);
+
+
 
 
 
