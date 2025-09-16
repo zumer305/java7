@@ -46,6 +46,51 @@ console.log("hello2");
 
 
 
+// arrow function
+const add=(a,b) =>{
+    console.log(a+b);
+};
+add(2,3);
+
+
+const cube=(n) =>{
+    console.log(n*n*n);
+};
+cube(2);
+
+
+// best way to return
+const power=(a,b)=>{
+    return a**b;
+};
+console.log(power(2,2));
+
+
+// without return
+const mul= (a,b) =>(a*b);
+console.log(mul(2,3));
+
+
+// setTimeout function
+console.log("Hi there!");
+setTimeout(()=>{console.log("Apna college");},4000);  //bad me print ho ga
+console.log("I am here");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
