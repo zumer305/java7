@@ -71,10 +71,55 @@ const mul= (a,b) =>(a*b);
 console.log(mul(2,3));
 
 
-// setTimeout function
+// setTimeout function (1 time)
 console.log("Hi there!");
-setTimeout(()=>{console.log("Apna college");},4000);  //bad me print ho ga
+// setTimeout(()=>{console.log("Apna college");},1000);  //bad me print ho ga
 console.log("I am here");
+
+// // setTimeout function (multiple time)
+// console.log("Hi there!");
+// setInterval(()=>{console.log("Apna college");},4000);  //bad me print ho ga bs yah multiple times
+// console.log("I am here");
+
+
+
+// function ka liya calling object hota------------- std. uska sab aya ga
+const std={
+    name:"zumer",
+    age:12,
+    roll:88,
+    getname:function(){
+        console.log(this);  //object scope
+        console.log(this.name);
+
+    },
+
+
+};
+std.getname();
+
+
+//  arrow function ka liya calling object hota window
+const std2={
+    name:"zumer",
+    age:12,
+    roll:88,
+    getname:()=>{
+        console.log(this);  //parent scope
+        console.log(this.name);
+
+    },
+
+
+};
+std2.getname();
+
+
+
+
+
+
+
 
 
 
